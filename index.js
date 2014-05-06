@@ -1,5 +1,7 @@
-var models = {
+'use strict';
 
+var models = {
+    transactions: function() {}
 };
 
 function PagarMe (key) {
@@ -10,7 +12,7 @@ function PagarMe (key) {
 
     this._api = {
         key: key,
-        endpoint: 'https://api.pagar.me',
+        endpoint: 'api.pagar.me',
         version: '1'
     };
 
@@ -18,6 +20,21 @@ function PagarMe (key) {
 };
 
 PagarMe.prototype = {
+
+    baseUrl: function() {
+        return this._api.endpoint;
+    },
+
+    buildPath: function(path) {
+        if (path[0] !== '/') {
+            path = '/' + path;
+        }
+        return '/' + this._api.version + path;
+    },
+
+    getApiKey: function() {
+        return this._api.key;
+    },
 
     _loadModels: function() {
         for (var model in models) {
@@ -27,4 +44,4 @@ PagarMe.prototype = {
 
 };
 
-//module.exports = PagarMe;
+module.exports = PagarMe;

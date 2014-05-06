@@ -1,0 +1,7 @@
+== Info: Adding handle: conn: 0x7fc109803a00
+== Info: Adding handle: send: 0
+== Info: Adding handle: recv: 0
+== Info: Curl_addHandleToPipeline: length: 1
+== Info: - Conn 0 (0x7fc109803a00) send_pipe: 1, recv_pipe: 0
+== Info: Could not resolve host: api_key=ak_test_KGXIjQ4GicOa2BLGZrDRTR5qNQxDWo
+== Info: Closing connection 0
