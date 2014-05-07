@@ -13,6 +13,9 @@
     "should": "~3.3.1"
   },
   "dependencies": {
-    "underscore": "~1.6.0"
+    "underscore": "~1.6.0",
+    "async": "~0.8.0",
+    "ursa": "~0.8.0",
+    "urlsafe-base64": "0.0.2"
   }
 }

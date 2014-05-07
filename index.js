@@ -1,7 +1,7 @@
 'use strict';
 
 var models = {
-    transactions: function() {}
+    transactions: require('./lib/transactions')
 };
 
 function PagarMe (key) {
